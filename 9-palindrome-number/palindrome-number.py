@@ -4,8 +4,10 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
+        # Method 1 : Slicing
         # return str(x) == str(x)[: :-1]  
         
+        #Method 2: Two Pointers
         new = str(x) 
         left = 0
         right = len((new)) - 1
