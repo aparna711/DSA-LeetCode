@@ -5,6 +5,5 @@ class Solution(object):
         :rtype: bool
         """
         return str(x) == str(x)[: :-1]  
-        # new = str(x)
-        # return new == new[::-1]
+       
          
