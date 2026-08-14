@@ -6,12 +6,12 @@ class Solution(object):
         """
 
         prefix = strs[0]
-        strs = strs[1:]
+        strs = strs[ 1 : ]
         for word in strs:
             i = 0
-            while i<len(prefix) and i<len(word) and prefix[i] == word[i]:
+            while i < len(prefix) and i < len(word) and prefix[i] == word[i]:
               i += 1  
-            prefix = prefix[0:i]
+            prefix = prefix[ 0 : i]
         
         return prefix
 
