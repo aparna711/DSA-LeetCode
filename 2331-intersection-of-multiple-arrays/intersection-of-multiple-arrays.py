@@ -17,8 +17,8 @@ class Solution(object):
 
         # Intersect with remaining lists
         for lst in nums[1:]:
-           # common &= set(lst)  # set intersection method 1
-            common = common.intersection(lst)  # set intersection method 2
-            
+            common &= set(lst)  # set intersection method 1
+           # common = common.intersection(lst)  # set intersection method 2
+
         # Return sorted result for consistency
         return sorted(common)
