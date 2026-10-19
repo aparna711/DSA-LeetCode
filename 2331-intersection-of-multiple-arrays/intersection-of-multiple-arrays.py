@@ -4,6 +4,7 @@ class Solution(object):
         :type nums: List[List[int]]
         :rtype: List[int]
         """
+        # 148 Aparna Nair
         # Validate input
         if not isinstance(nums, list) or not all(isinstance(lst, list) for lst in nums):
             raise ValueError("Input must be a list of lists of integers.")
@@ -16,7 +17,8 @@ class Solution(object):
 
         # Intersect with remaining lists
         for lst in nums[1:]:
-            common &= set(lst)  # set intersection
+           # common &= set(lst)  # set intersection method 1
+            common = common.intersection(lst)  # set intersection method 2
             
         # Return sorted result for consistency
         return sorted(common)
